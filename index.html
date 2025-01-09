@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <div class="loan-calculator">
   <div class="top">
     
@@ -313,3 +314,73 @@
   
   calculateBtn.addEventListener("click", init);
   </script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TD Mortgage Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="loan-calculator">
+    <header>
+      <h1>TD Mortgage Calculator</h1>
+    </header>
+
+    <div class="top">
+      <form id="mortgage-form">
+        <div class="group">
+          <div class="title">Purchase Price ($)</div>
+          <input type="text" value="30000" class="loan-amount" required>
+        </div>
+
+        <div class="group">
+          <div class="title">Down Payment ($)</div>
+          <input type="text" value="500" class="down-payment" required>
+        </div>
+
+        <div class="group">
+          <div class="title">Mortgage Term (Months)</div>
+          <input type="text" value="240" class="loan-tenure" required>
+        </div>
+
+        <div class="group">
+          <div class="title">Interest Rate (%)</div>
+          <input type="text" value="8.5" class="interest-rate" required>
+        </div>
+      </form>
+    </div>
+
+    <div class="result">
+      <div class="left">
+        <div class="loan-emi">
+          <h3>Monthly Payment</h3>
+          <div class="value">123</div>
+        </div>
+
+        <div class="total-interest">
+          <h3>Total Interest Payable</h3>
+          <div class="value">1234</div>
+        </div>
+
+        <div class="total-amount">
+          <h3>Total Amount (Principal + Interest)</h3>
+          <div class="value">12345</div>
+        </div>
+
+        <button class="calculate-btn">Calculate</button>
+      </div>
+
+      <div class="right">
+        <canvas id="myChart" width="400" height="400"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
+>>>>>>> a9005de (updated code)
